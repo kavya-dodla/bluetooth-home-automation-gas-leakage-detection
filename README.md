@@ -12,36 +12,38 @@ The project combines automation and safety features into a single embedded syste
 
 ## Objectives
 
-- Control appliances wirelessly using Bluetooth communication.
-- Establish communication between a smartphone and NodeMCU through the HC-05 module.
-- Detect gas leakage using the MQ2 gas sensor.
-- Generate alerts through LEDs and a buzzer when gas levels exceed the threshold value.
-- Develop a simple, low-cost, and efficient smart home solution.
+* Control appliances wirelessly using Bluetooth communication.
+* Establish communication between a smartphone and NodeMCU through the HC-05 module.
+* Detect gas leakage using the MQ2 gas sensor.
+* Generate alerts through LEDs and a buzzer when gas levels exceed the threshold value.
+* Develop a simple, low-cost, and efficient smart home solution.
 
 ---
 
 ## Components Used
 
 ### Hardware
-- NodeMCU ESP8266
-- HC-05 Bluetooth Module
-- MQ2 Gas Sensor
-- Buzzer
-- LEDs
-- Breadboard
-- Jumper Wires
-- USB Cable
+
+* NodeMCU ESP8266
+* HC-05 Bluetooth Module
+* MQ2 Gas Sensor
+* Buzzer
+* LEDs
+* Breadboard
+* Jumper Wires
+* USB Cable
 
 ### Software
-- Arduino IDE
-- Embedded C
-- Bluetooth Terminal Application
+
+* Arduino IDE
+* Embedded C
+* Bluetooth Terminal Application
 
 ---
 
 ## System Architecture
 
-![System Architecture](Images/blockdiagram.png)
+![System Architecture](blockdiagram.png)
 
 ### Architecture Description
 
@@ -55,7 +57,7 @@ The project combines automation and safety features into a single embedded syste
 
 ## Project Setup
 
-![Project Setup](Images/setup.jpeg)
+![Project Setup](Setup.jpeg)
 
 ---
 
@@ -63,19 +65,20 @@ The project combines automation and safety features into a single embedded syste
 
 ### Home Automation
 
-- User sends commands from a smartphone.
-- HC-05 receives the commands via Bluetooth.
-- NodeMCU processes the commands.
-- LED is switched ON/OFF based on user input.
+* User sends commands from a smartphone.
+* HC-05 receives the commands via Bluetooth.
+* NodeMCU processes the commands.
+* LED is switched ON/OFF based on user input.
 
 ### Gas Leakage Detection
 
-- MQ2 sensor continuously monitors gas levels.
-- NodeMCU reads sensor values.
-- If gas concentration exceeds the predefined threshold:
-  - Alert LED turns ON.
-  - Buzzer is activated.
-- The user is notified about the gas leakage condition.
+* MQ2 sensor continuously monitors gas levels.
+* NodeMCU reads sensor values.
+* If gas concentration exceeds the predefined threshold:
+
+  * Alert LED turns ON.
+  * Buzzer is activated.
+* The user is notified about the gas leakage condition.
 
 ---
 
@@ -83,34 +86,34 @@ The project combines automation and safety features into a single embedded syste
 
 A demonstration video of the project is available in the repository.
 
-[Watch Demo Video](Videos/demo.mp4)
+[Watch Demo Video](demo.mp4)
 
 The project demonstration video shows:
 
-- Bluetooth communication between smartphone and NodeMCU.
-- Wireless LED control through the mobile application.
-- Real-time gas leakage monitoring.
-- Alert generation using buzzer and LEDs.
+* Bluetooth communication between smartphone and NodeMCU.
+* Wireless LED control through the mobile application.
+* Real-time gas leakage monitoring.
+* Alert generation using buzzer and LEDs.
 
 ---
 
 ## Results
 
-- Successful Bluetooth communication established using HC-05.
-- Wireless appliance control achieved through smartphone commands.
-- Real-time gas leakage detection implemented using MQ2 sensor.
-- Alert system successfully activated during gas leakage conditions.
-- Reliable performance achieved after debugging communication and sensor calibration issues.
+* Successful Bluetooth communication established using HC-05.
+* Wireless appliance control achieved through smartphone commands.
+* Real-time gas leakage detection implemented using MQ2 sensor.
+* Alert system successfully activated during gas leakage conditions.
+* Reliable performance achieved after debugging communication and sensor calibration issues.
 
 ---
 
 ## Challenges Faced
 
-- HC-05 communication issues.
-- TX/RX connection debugging.
-- Baud rate mismatch problems.
-- MQ2 sensor threshold calibration.
-- Hardware troubleshooting and testing.
+* HC-05 communication issues.
+* TX/RX connection debugging.
+* Baud rate mismatch problems.
+* MQ2 sensor threshold calibration.
+* Hardware troubleshooting and testing.
 
 These challenges were resolved through systematic testing and debugging.
 
@@ -118,36 +121,36 @@ These challenges were resolved through systematic testing and debugging.
 
 ## Future Enhancements
 
-- Control real household appliances using relay modules.
-- Develop a dedicated Android application.
-- Add Wi-Fi and IoT cloud integration.
-- Enable remote monitoring through the internet.
-- Integrate SMS and mobile notifications.
-- Add multiple environmental sensors for advanced smart home functionality.
+* Control real household appliances using relay modules.
+* Develop a dedicated Android application.
+* Add Wi-Fi and IoT cloud integration.
+* Enable remote monitoring through the internet.
+* Integrate SMS and mobile notifications.
+* Add multiple environmental sensors for advanced smart home functionality.
 
 ---
 
 ## Technologies Used
 
-- Embedded Systems
-- Internet of Things (IoT)
-- NodeMCU ESP8266
-- HC-05 Bluetooth Module
-- MQ2 Gas Sensor
-- Arduino IDE
-- Embedded C
-- Bluetooth Communication
+* Embedded Systems
+* Internet of Things (IoT)
+* NodeMCU ESP8266
+* HC-05 Bluetooth Module
+* MQ2 Gas Sensor
+* Arduino IDE
+* Embedded C
+* Bluetooth Communication
 
 ---
 
 ## My Contribution
 
-- Hardware assembly and circuit connections.
-- NodeMCU programming using Arduino IDE.
-- HC-05 Bluetooth module interfacing.
-- MQ2 gas sensor integration.
-- System testing and debugging.
-- Validation of project functionality.
+* Hardware assembly and circuit connections.
+* NodeMCU programming using Arduino IDE.
+* HC-05 Bluetooth module interfacing.
+* MQ2 gas sensor integration.
+* System testing and debugging.
+* Validation of project functionality.
 
 ---
 
@@ -155,13 +158,13 @@ These challenges were resolved through systematic testing and debugging.
 
 Through this project, I gained hands-on experience in:
 
-- Embedded Systems Development
-- IoT Fundamentals
-- Sensor Interfacing
-- Bluetooth Communication
-- Hardware Debugging
-- Microcontroller Programming
-- Problem Solving and Troubleshooting
+* Embedded Systems Development
+* IoT Fundamentals
+* Sensor Interfacing
+* Bluetooth Communication
+* Hardware Debugging
+* Microcontroller Programming
+* Problem Solving and Troubleshooting
 
 ---
 
@@ -169,6 +172,4 @@ Through this project, I gained hands-on experience in:
 
 **Kavya Dodla**
 
-
-
----
+B.Tech Student | Embedded Systems & IoT Enthusiast
