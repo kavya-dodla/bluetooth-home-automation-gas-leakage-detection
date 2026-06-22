@@ -210,17 +210,6 @@ Through this project, valuable experience was gained in:
 
 ---
 
-## Repository Contents
-
-* HomeAutomation.ino
-* blockdiagram.png
-* Setup.jpeg
-* demo.mp4
-* README.md
-* LICENSE
-
----
-
 ## Author
 
 **Kavya Dodla**
