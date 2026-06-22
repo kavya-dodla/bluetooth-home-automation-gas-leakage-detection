@@ -2,11 +2,13 @@
 
 A Bluetooth-enabled smart home automation and gas leakage detection system developed using NodeMCU ESP8266, HC-05 Bluetooth Module, and MQ2 Gas Sensor.
 
+---
+
 ## Overview
 
-This project presents a **Bluetooth-Based Home Automation and Gas Leakage Detection System** developed using **NodeMCU ESP8266**, **HC-05 Bluetooth Module**, and **MQ2 Gas Sensor**. The system allows users to wirelessly control appliances through a smartphone and provides real-time gas leakage monitoring for enhanced safety.
+This project presents a Bluetooth-Based Home Automation and Gas Leakage Detection System developed using NodeMCU ESP8266, HC-05 Bluetooth Module, and MQ2 Gas Sensor. The system enables wireless control of appliances through a smartphone while simultaneously monitoring gas leakage conditions for enhanced safety.
 
-The project combines automation and safety features into a single embedded system, making it suitable for smart home applications.
+The project integrates home automation and gas detection into a single embedded system, providing a simple, cost-effective, and reliable smart home solution.
 
 ---
 
@@ -15,29 +17,68 @@ The project combines automation and safety features into a single embedded syste
 * Control appliances wirelessly using Bluetooth communication.
 * Establish communication between a smartphone and NodeMCU through the HC-05 module.
 * Detect gas leakage using the MQ2 gas sensor.
-* Generate alerts through LEDs and a buzzer when gas levels exceed the threshold value.
-* Develop a simple, low-cost, and efficient smart home solution.
+* Generate alerts through LEDs and a buzzer when gas levels exceed a predefined threshold.
+* Develop a low-cost and efficient smart home automation system.
 
 ---
 
 ## Components Used
 
-### Hardware
+### Hardware Components
 
-* NodeMCU ESP8266
-* HC-05 Bluetooth Module
-* MQ2 Gas Sensor
-* Buzzer
-* LEDs
-* Breadboard
-* Jumper Wires
-* USB Cable
+| Component              | Specification                  | Quantity    |
+| ---------------------- | ------------------------------ | ----------- |
+| NodeMCU ESP8266        | ESP-12E Development Board      | 1           |
+| HC-05 Bluetooth Module | Bluetooth v2.0 + EDR           | 1           |
+| MQ2 Gas Sensor         | LPG/Smoke/Gas Sensor           | 1           |
+| Active Buzzer          | 5V Buzzer                      | 1           |
+| Green LED              | 5mm LED                        | 1           |
+| Red LED                | 5mm LED                        | 1           |
+| Breadboard             | Standard Breadboard            | 1           |
+| Jumper Wires           | Male-Male / Male-Female        | As Required |
+| USB Cable              | Micro USB Cable                | 1           |
+| Smartphone             | Bluetooth Terminal Application | 1           |
 
-### Software
+### Software Components
 
 * Arduino IDE
 * Embedded C
 * Bluetooth Terminal Application
+
+---
+
+## Circuit Connections
+
+### HC-05 Bluetooth Module
+
+| HC-05 Pin | NodeMCU Pin |
+| --------- | ----------- |
+| VCC       | VIN         |
+| GND       | GND         |
+| TXD       | RX          |
+| RXD       | TX          |
+
+### MQ2 Gas Sensor
+
+| MQ2 Pin | NodeMCU Pin |
+| ------- | ----------- |
+| VCC     | VIN         |
+| GND     | GND         |
+| AO      | A0          |
+
+### LEDs
+
+| Component | NodeMCU Pin |
+| --------- | ----------- |
+| Green LED | D5          |
+| Red LED   | D3          |
+
+### Buzzer
+
+| Buzzer Pin   | Connection |
+| ------------ | ---------- |
+| Positive (+) | D2         |
+| Negative (-) | GND        |
 
 ---
 
@@ -47,11 +88,11 @@ The project combines automation and safety features into a single embedded syste
 
 ### Architecture Description
 
-1. The smartphone sends commands through a Bluetooth terminal application.
-2. HC-05 receives the Bluetooth commands and forwards them to NodeMCU.
-3. NodeMCU processes the received commands and controls the LED.
-4. MQ2 continuously monitors gas concentration.
-5. When gas levels exceed the threshold value, the buzzer is activated to alert the user.
+1. The smartphone sends commands through a Bluetooth Terminal application.
+2. HC-05 receives the Bluetooth commands and forwards them to the NodeMCU.
+3. NodeMCU processes the received commands and controls the connected LED.
+4. MQ2 continuously monitors gas concentration levels.
+5. When gas concentration exceeds the threshold value, the buzzer and alert LED are activated.
 
 ---
 
@@ -66,19 +107,19 @@ The project combines automation and safety features into a single embedded syste
 ### Home Automation
 
 * User sends commands from a smartphone.
-* HC-05 receives the commands via Bluetooth.
-* NodeMCU processes the commands.
+* HC-05 receives commands via Bluetooth.
+* NodeMCU processes the received commands.
 * LED is switched ON/OFF based on user input.
 
 ### Gas Leakage Detection
 
-* MQ2 sensor continuously monitors gas levels.
-* NodeMCU reads sensor values.
+* MQ2 sensor continuously monitors gas concentration.
+* NodeMCU reads sensor values through the analog pin.
 * If gas concentration exceeds the predefined threshold:
 
-  * Alert LED turns ON.
+  * Red LED turns ON.
   * Buzzer is activated.
-* The user is notified about the gas leakage condition.
+* The user is alerted about potential gas leakage.
 
 ---
 
@@ -88,7 +129,7 @@ A demonstration video of the project is available in the repository.
 
 [Watch Demo Video](demo.mp4)
 
-The project demonstration video shows:
+The demonstration video showcases:
 
 * Bluetooth communication between smartphone and NodeMCU.
 * Wireless LED control through the mobile application.
@@ -99,21 +140,21 @@ The project demonstration video shows:
 
 ## Results
 
-* Successful Bluetooth communication established using HC-05.
-* Wireless appliance control achieved through smartphone commands.
-* Real-time gas leakage detection implemented using MQ2 sensor.
-* Alert system successfully activated during gas leakage conditions.
-* Reliable performance achieved after debugging communication and sensor calibration issues.
+* Successfully established Bluetooth communication using HC-05.
+* Achieved wireless appliance control through smartphone commands.
+* Implemented real-time gas leakage detection using MQ2 sensor.
+* Generated immediate alerts through buzzer and LEDs during gas leakage conditions.
+* Achieved reliable operation after communication and sensor calibration testing.
 
 ---
 
 ## Challenges Faced
 
-* HC-05 communication issues.
-* TX/RX connection debugging.
-* Baud rate mismatch problems.
+* HC-05 communication and pairing issues.
+* TX/RX connection troubleshooting.
+* Baud rate mismatch during serial communication.
 * MQ2 sensor threshold calibration.
-* Hardware troubleshooting and testing.
+* Hardware debugging and connection verification.
 
 These challenges were resolved through systematic testing and debugging.
 
@@ -121,12 +162,12 @@ These challenges were resolved through systematic testing and debugging.
 
 ## Future Enhancements
 
-* Control real household appliances using relay modules.
+* Control actual household appliances using relay modules.
 * Develop a dedicated Android application.
-* Add Wi-Fi and IoT cloud integration.
+* Integrate Wi-Fi and IoT cloud platforms.
 * Enable remote monitoring through the internet.
-* Integrate SMS and mobile notifications.
-* Add multiple environmental sensors for advanced smart home functionality.
+* Add SMS and push notification alerts.
+* Integrate additional environmental sensors for advanced smart home functionality.
 
 ---
 
@@ -143,7 +184,7 @@ These challenges were resolved through systematic testing and debugging.
 
 ---
 
-## My Contribution
+## Project Contributions
 
 * Hardware assembly and circuit connections.
 * NodeMCU programming using Arduino IDE.
@@ -156,15 +197,27 @@ These challenges were resolved through systematic testing and debugging.
 
 ## Learning Outcomes
 
-Through this project, I gained hands-on experience in:
+Through this project, valuable experience was gained in:
 
 * Embedded Systems Development
 * IoT Fundamentals
-* Sensor Interfacing
 * Bluetooth Communication
+* Sensor Interfacing
 * Hardware Debugging
 * Microcontroller Programming
+* System Testing and Validation
 * Problem Solving and Troubleshooting
+
+---
+
+## Repository Contents
+
+* HomeAutomation.ino
+* blockdiagram.png
+* Setup.jpeg
+* demo.mp4
+* README.md
+* LICENSE
 
 ---
 
