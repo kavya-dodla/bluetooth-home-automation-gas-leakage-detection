@@ -84,7 +84,7 @@ The project integrates home automation and gas detection into a single embedded 
 
 ## System Architecture
 
-![System Architecture](blockdiagram.png)
+![System Architecture](Images/blockdiagram.png)
 
 ### Architecture Description
 
@@ -98,7 +98,7 @@ The project integrates home automation and gas detection into a single embedded 
 
 ## Project Setup
 
-![Project Setup](Setup.jpeg)
+![Project Setup](Images/Setup.jpeg)
 
 ---
 
@@ -127,7 +127,7 @@ The project integrates home automation and gas detection into a single embedded 
 
 A demonstration video of the project is available in the repository.
 
-[Watch Demo Video](demo.mp4)
+[Watch Demo Video](Videos/demo.mp4)
 
 The demonstration video showcases:
 
