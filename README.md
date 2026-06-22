@@ -167,8 +167,8 @@ Through this project, I gained hands-on experience in:
 
 ## Author
 
-**Kavya**
+**Kavya Dodla**
 
-B.Tech Student | Embedded Systems & IoT Enthusiast
+
 
 ---
