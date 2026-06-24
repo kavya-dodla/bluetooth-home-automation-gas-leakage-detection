@@ -43,7 +43,7 @@ The project integrates home automation and gas detection into a single embedded 
 
 * Arduino IDE
 * Embedded C
-* Bluetooth Terminal Application
+* Serial Bluetooth Terminal App
 
 ---
 
